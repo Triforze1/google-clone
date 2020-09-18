@@ -8,7 +8,6 @@ function App() {
     // BEM naming convention
     <div className="app">
       <Router>
-
         <Switch>
           <Route path='/search'>
             <h1>This is the search page</h1>
