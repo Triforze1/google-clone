@@ -1,5 +1,7 @@
 import React from 'react'
 import '../css/Home.css'
+import MicIcon from '@material-ui/icons/Mic';
+import SearchIcon from '@material-ui/icons/Search';
 
 function Home() {
     return (

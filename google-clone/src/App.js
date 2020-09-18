@@ -1,17 +1,23 @@
-import React from 'react';
-import './css/App.css';
-import Home from './pages/Home'
+import React from "react";
+import "./css/App.css";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     // BEM naming convention
     <div className="app">
-      <h1>Hello, This is the google clone</h1>
+      <Router>
 
-      {/* Home (One we are going to search on)*/}
-      <Home />
-      
-      {/* Search Page (The results page)*/}
+        <Switch>
+          <Route path='/search'>
+            <h1>This is the search page</h1>
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
