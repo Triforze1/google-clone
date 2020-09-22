@@ -1,8 +1,7 @@
 import React from 'react'
 import '../css/Home.css'
 import { Link } from 'react-router-dom'
-import MicIcon from '@material-ui/icons/Mic';
-import SearchIcon from '@material-ui/icons/Search';
+import Search from '../components/Search'
 import AppsIcon from '@material-ui/icons/Apps';
 import { Avatar } from '@material-ui/core'
 
@@ -23,7 +22,12 @@ function Home() {
             </div>
 
             <div className='home_body'>
-
+                <img src="https://cdn.vox-cdn.com/thumbor/E9RM8-qg-iyLEAzP4d7tobqI09o=/0x0:2012x1341/1400x933/filters:focal(0x0:2012x1341):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" 
+                alt=""/>
+            </div>
+            <div className="input_container">
+                {/* <Search/> */}
+                <Search />
             </div>
         </div>
     )
